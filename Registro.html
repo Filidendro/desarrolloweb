@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registrarse - Lavandería El Rey</title>
+	<link  rel="icon"   href="img/logo.png" type="image/png" />
+	<link rel="stylesheet" href="ccs/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<a title="Inicio" href="index.html"><img src="img/logo.png" alt="Logo" class="logo" /></a>
+
+		<!--Menú Redes sociales-->
+		<div class="redes">
+			<a title="Seguinos en facebook" href="https://www.facebook.com/Elreylavanderiasalta/" target="_blank" ><img class="iconosRedes" src="img/face.png" alt="facebook" /></a>
+			<img src="img/twitter.png" class="iconosRedes"><!--No tiene twitter aún-->
+			<img src="img/instagram.png" class="iconosRedes"><!--No tiene Instagram aún-->
+			<a title="Mandanos un whatsapp" href="https://api.whatsapp.com/send?phone=+5493541623563" target="_blank"><img src="img/whatsapp.png" class="iconosRedes" alt="Whatsapp" /></a>
+
+			<!--Selección de idioma-->
+			<a title="English version" href=""><img src="img/idioma.png" alt="English" class="iconosRedes"></a>
+		</div>
+		<br>
+		<br>
+		<br>
+		<h1>Lavandería El Rey</h1>
+		<br>
+		<br>
+
+		<nav>
+			<ul>
+				<li><a href="index.html" class="navLink">Inicio</a></li>
+				<li><a href="Servicios.html "class="navLink">Servicios</a></li>
+				<li><a href="Quienes-somos.html"class="navLink">¿Quiénes somos?</a></li>
+				<li><a href="Contacto.html"class="navLink">Contacto</a></li>
+				<li><a href="Ingresar.html"class="navLink">Ingresar</a></li>
+			</ul>
+		</nav>
+		<br>
+
+	</header>
+	<main>
+		<section>
+			<h2>Para registrarse completá el formulario:</h2>
+		</section>
+		<form action="">
+			<fieldset>
+				<legend>Datos personales</legend>
+				<label>Nombres: <input type="text" name="nom" required /><label><br>
+				<label>Apellidos: <input type="text" name="ape" required /><label><br>
+				<label>Fecha de nacimiento: <input type="date" name="fechanac" required /><label><br>
+				<label>Género:</label>
+				<input type="radio" id="Masculino" name="radio" checked><label for="Masculino">Masculino</label>
+   	         <input type="radio" id="Femenino" name="radio"><label for="Femenino">Femenino</label>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Datos del domicilo</legend>
+				<label>Calle: <input type="text" name="calle" required/><label><br>
+				<label>Número: <input type="number" name="numero" required/><label><br>
+				<label>Piso/Departamento: <input type="text" name="pisodepto" /><label><br>
+				<label>Barrio: <input type="text" name="Barrio" required/><label><br>
+				<label for="selectsuc">Sucursal más cercana:</label>
+					<select id="selectsuc" required>
+						<option disabled selected hidden>Seleccione una sucursal</option>
+						<option>Buenos Aires esq. San Juan</option>
+						<option>Rep. de Siria esq. Caseros</option>
+						<option>San Juan esq. Islas Malvinas</option>
+   	         	</select>
+			</fieldset><br>
+			<fieldset>
+				<legend>Datos de la cuenta</legend>
+				<label>Usuario: <input type="text" name="user" required/><label><br>
+				<label>Email: <input type="email" name="email" required/><label><br>
+				<label>Contraseña: <input type="password" name="pass" required/><label><br>
+			</fieldset><br>
+			<input type="submit" value="Enviar Formulario">
+			<input type="reset" value="LimpiarFormulario">
+		</form>
+	</main>
+	<footer>
+		<p>Todos los derechos reservados</p>
+		<p><strong>Webmaster</strong></p>
+	</footer>		
+</body>
+</html>
