@@ -7,31 +7,18 @@
 
 header{
 	background-color: rgb(211,217,223);
+	position: sticky;
 }
 
 h1{
 	font-family: roboto;
 	text-align: center;
 	color: rgb(0,171,251);
-
-}
-
-ul ul {
-   position: absolute;
-   display: none;
-}
-ul ul li {
-   display: block;
-}
-ul li:hover ul {
-   display:block;
-   background-color: black;
 }
 
 ul {
 	list-style-type: none;
 	text-align: center;
-/*	font-size:0*/
 }
 
 li {
@@ -152,6 +139,8 @@ tr:hover td {
 
 .derecha{
 	float: right;
+	display: flex;
+	flex-wrap: nowrap;
 	margin-left: 1%;
 }
 
@@ -162,9 +151,9 @@ tr:hover td {
 
 .quienSection{
 	border: solid black;
-	width: 500px;
+	/*width: 500px;*/
 	text-align: center;
-	margin-left: 45%;
+	/*margin-left: 20%;*/
 	margin-bottom: 2%;
 	margin-top: 2%;
 	padding: 5px;
@@ -173,6 +162,7 @@ tr:hover td {
 .quienSection p{
 	font-size: 20px;
 	font-weight: bold;
+
 }
 
 html {
@@ -181,7 +171,7 @@ html {
 }
 body {
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 	background-color: #cff;
 }
 footer {
@@ -191,4 +181,17 @@ footer {
 	width: 100%;
 	height: 40px;
 	color: white;
+}
+.flexcolumna{
+	display: flex;
+	flex-direction: column;
+}
+.flexfila{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	align-content: stretch;
+
 }
