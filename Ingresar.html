@@ -4,40 +4,50 @@
 	<meta charset="UTF-8">
 	<title>Ingresar - Lavandería El Rey</title>
 	<link  rel="icon"   href="img/logo.png" type="image/png" />
+	<link rel="stylesheet" href="ccs/style.css">
 </head>
 <body>
 	<main>
-		<header>
-			<a title="Inicio" href="index.html"><img src="img/logo.png" alt="Logo" /></a>
-			<h1>Lavandería El Rey</h1>
-			<!--Menú Redes sociales-->
-			<a title="Seguinos en facebook" href="https://www.facebook.com/Elreylavanderiasalta/" target="_blank"><img src="img/facebook.png" alt="facebook" /></a>
-			<img src="img/twitter.png"><!--No tiene twitter aún-->
-			<img src="img/instagram.png"><!--No tiene Instagram aún-->
-			<a title="Mandanos un whatsapp" href="https://api.whatsapp.com/send?phone=+5493875826109" target="_blank"><img src="img/whatsapp.png" alt="Whatsapp" /></a>
+	<header>
+		<a title="Inicio" href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+
+		<!--Menú Redes sociales-->
+		<div class="redes">
+			<a title="Seguinos en facebook" href="https://www.facebook.com/Elreylavanderiasalta/" target="_blank" ><img class="iconosRedes" src="img/face.png" alt="facebook" /></a>
+			<img src="img/twitter.png" class="iconosRedes"><!--No tiene twitter aún-->
+			<img src="img/instagram.png" class="iconosRedes"><!--No tiene Instagram aún-->
+			<a title="Mandanos un whatsapp" href="https://api.whatsapp.com/send?phone=+5493541623563" target="_blank"><img src="img/whatsapp.png" class="iconosRedes" alt="Whatsapp" /></a>
+
 			<!--Selección de idioma-->
-			<img src="img/idioma.png">
-			<nav>
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="Servicios.html">Servicios</a></li>
-					<li><a href="Quienes-somos.html">¿Quiénes somos?</a></li>
-					<li><a href="Contacto.html">Contacto</a></li>
-					<li><a href="Ingresar.html">Ingresar</a></li>
-				</ul>
-			</nav>
-		</header>
+			<a title="English version" href=""><img src="img/idioma.png" alt="English" class="iconosRedes"></a>
+		</div>
+		<h1>Lavandería El Rey</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="navlink">Inicio</a></li>
+				<li><a href="Servicios.html "class="navlink">Servicios</a></li>
+				<li><a href="Quienes-somos.html"class="navlink">¿Quiénes somos?</a></li>
+				<li><a href="Contacto.html"class="navlink">Contacto</a></li>
+				<li><a href="Ingresar.html"class="navlink">Ingresar</a></li>
+			</ul>
+		</nav>
+
+	</header>
 		<section>
-			<p>Nobre de usuario:</p>
-			<input type="text" name="Usuario">
-			<p>Contraseña:</p>
-			<input type="password" name="Contraseña">
-			<br>
-			<button>
-				<p>Ingresar</p>
-			</button>
-			<a href="Recuperarpass.html"><p>¿Olvidaste tu contraseña?</p></a>
-			<a href="Registro.html"><p>Registrarse</p></a>
+			<form>
+				<fieldset>
+					<p>Nobre de usuario:</p>
+					<input type="text" name="Usuario">
+					<p>Contraseña:</p>
+					<input type="password" name="Contraseña">
+					<br>
+					<button>
+						<p>Ingresar</p>
+					</button>
+					<a href="Recuperarpass.html"><p>¿Olvidaste tu contraseña?</p></a>
+					<a href="Registro.html"><p>Registrarse</p></a>
+				</fieldset>
+			</form>
 		</section>
 		<section>
 			<img src="img/img_ing.png" alt="Lavanderia">
